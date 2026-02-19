@@ -1,0 +1,51 @@
+services:
+  azp-agent-linux-1:
+    image: taylorcullen/azure-linux-build-agent:latest
+    container_name: ${CONTAINER_NAME}-001
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-001
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+  azp-agent-linux-2:
+    image: taylorcullen/azure-linux-build-agent:latest
+    container_name: ${CONTAINER_NAME}-002
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-002
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+  azp-agent-linux-3:
+    image: taylorcullen/azure-linux-build-agent:latest
+    container_name: ${CONTAINER_NAME}-003
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-003
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+  azp-agent-linux-4:
+    image: taylorcullen/azure-linux-build-agent:latest
+    container_name: ${CONTAINER_NAME}-004
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-004
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+  azp-agent-linux-5:
+    image: taylorcullen/azure-linux-build-agent:latest
+    container_name: ${CONTAINER_NAME}-005
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-005
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true

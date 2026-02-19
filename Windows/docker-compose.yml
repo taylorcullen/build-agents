@@ -1,0 +1,69 @@
+services:
+  azp-agent-windows-1:
+    image: taylorcullen/azure-windows-build-agent:latest
+    container_name: ${CONTAINER_NAME}-001
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-001
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+    networks:
+      - default
+
+  azp-agent-windows-2:
+    image: taylorcullen/azure-windows-build-agent:latest
+    container_name: ${CONTAINER_NAME}-002
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-002
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+    networks:
+      - default
+
+  azp-agent-windows-3:
+    image: taylorcullen/azure-windows-build-agent:latest
+    container_name: ${CONTAINER_NAME}-003
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-003
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+    networks:
+      - default
+
+  azp-agent-windows-4:
+    image: taylorcullen/azure-windows-build-agent:latest
+    container_name: ${CONTAINER_NAME}-004
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-004
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+    networks:
+      - default
+
+  azp-agent-windows-5:
+    image: taylorcullen/azure-windows-build-agent:latest
+    container_name: ${CONTAINER_NAME}-005
+    environment:
+      - AZP_URL=${AZP_URL}
+      - AZP_TOKEN=${AZP_TOKEN}
+      - AZP_POOL=${AZP_POOL}
+      - AZP_AGENT_NAME=${AZP_AGENT_NAME}-005
+      - Agent.Owner=tcullen
+      - Agent.GitVersion=true
+    networks:
+      - default
+
+networks:
+  default:
+    name: windows_default
